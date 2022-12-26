@@ -1,0 +1,33 @@
+$colorLight: #000000;
+$backgroundColorLight: #FFFFFF;
+$colorDark: #FFFFFF;
+$backgroundColorDark: #000000;
+
+.os-theme {
+
+  @media (prefers-color-scheme: light) {
+    & {
+      color: $colorLight;
+      background-color: $backgroundColorLight;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    & {
+      color: $colorDark;
+      background-color: $backgroundColorDark;
+    }
+  }
+}
+
+.theme {
+  &-dark {
+    color: $colorDark;
+    background-color: $backgroundColorDark;
+  }
+
+  &-light {
+    color: $colorLight;
+    background-color: $backgroundColorLight;
+  }
+}

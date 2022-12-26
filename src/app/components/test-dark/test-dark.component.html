@@ -1,0 +1,5 @@
+<div [ngClass]="this.getClasses()">
+  <p>Je ne suis pas ton gungan jarjar</p>
+</div>
+<button (click)="this.switchDark()" [disabled]="this.isOs()">Switch theme</button>
+<button (click)="this.switchOs()">Switch to {{ this.isOs() ? "custom" : "os" }} theme</button>
